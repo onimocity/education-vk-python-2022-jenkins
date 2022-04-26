@@ -14,6 +14,6 @@ def test_third():
     assert 5 > 2
 
 
-def test_fourth():
-
-    assert 'abc' != 'aaa'
+#def test_fourth():
+#
+#    assert 'abc' != 'aaa'
