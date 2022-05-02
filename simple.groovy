@@ -23,13 +23,13 @@ pipeline {
             }
         }
 
-        stage("Testing ...") {
+        stage("Testing one ...") {
             steps {
                 echo "one"
             }
         }
 
-        stage("Testing ...") {
+        stage("Testing two ...") {
             steps {
                 echo "two"
             }
