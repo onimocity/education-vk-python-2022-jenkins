@@ -24,14 +24,14 @@ pipeline {
         stage("Testing one ...") {
             steps {
                 echo "one"
-                pytest -s -l -v tests/test.py --alluredir ${WORKSPACE}/alluredir"
+                pytest -s -l -v tests/test.py --alluredir ${WORKSPACE}/alluredir
             }
         }
 
         stage("Testing two ...") {
             steps {
                 echo "two"
-                pytest -s -l -v tests/test_second.py --alluredir ${WORKSPACE}/alluredir"
+                pytest -s -l -v tests/test_second.py --alluredir ${WORKSPACE}/alluredir
             }
         }
     }
