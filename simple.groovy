@@ -1,6 +1,7 @@
 properties([disableConcurrentBuilds()])
 
 pipeline {
+    agent none
 
     options {
         buildDiscarder(logRotator(numToKeepStr: '3'))
