@@ -2,7 +2,7 @@ properties([disableConcurrentBuilds()])
 
 pipeline {
     agent {
-        label 'master'
+        label 'Built-In-Node'
     }
 
     options {
