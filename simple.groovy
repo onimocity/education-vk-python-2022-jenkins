@@ -24,12 +24,14 @@ pipeline {
         stage("Testing one ...") {
             steps {
                 echo "one"
+                pytest -s -l -v tests/test.py
             }
         }
 
         stage("Testing two ...") {
             steps {
                 echo "two"
+                pytest -s -l -v tests/test_second.py
             }
         }
     }
