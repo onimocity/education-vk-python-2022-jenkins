@@ -11,7 +11,7 @@ pipeline {
     }
 
     environment {
-
+        VAR="123"
     }
 
     stages {
