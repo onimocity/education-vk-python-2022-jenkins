@@ -28,6 +28,7 @@ pipeline {
         stage("Testing one ...") {
             steps {
                 echo "one"
+                sh "cd $WORKSPACE/lection19/code"
                 sh "pytest -s -l -v tests/test.py --alluredir ${WORKSPACE}/alluredir"
             }
         }
@@ -35,6 +36,7 @@ pipeline {
         stage("Testing two ...") {
             steps {
                 echo "two"
+                sh "cd $WORKSPACE/lection19/code"
                 sh "pytest -s -l -v tests/test_second.py --alluredir ${WORKSPACE}/alluredir"
             }
         }
