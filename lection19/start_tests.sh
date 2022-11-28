@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+export PATH="$PATH:/usr/local/bin/"
 
 cd code
 
