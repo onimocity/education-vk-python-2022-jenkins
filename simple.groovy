@@ -28,7 +28,7 @@ pipeline {
         stage("Testing one ...") {
             steps {
                 echo "one"
-                sh "export PATH="$PATH:/usr/local/bin/""
+                sh 'export PATH="$PATH:/usr/local/bin/"'
                 sh "cd $WORKSPACE/lection19/code && pytest -s -l -v tests/test.py"
             }
         }
@@ -36,7 +36,7 @@ pipeline {
         stage("Testing two ...") {
             steps {
                 echo "two"
-                sh "export PATH="$PATH:/usr/local/bin/""
+                sh 'export PATH="$PATH:/usr/local/bin/"'
                 sh "cd $WORKSPACE/lection19/code && pytest -s -l -v tests/test_second.py"
             }
         }
